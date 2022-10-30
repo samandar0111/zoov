@@ -1,3 +1,38 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/montserrat-v25-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-700 - latin */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/oswald-v49-latin-700.woff2") format("woff2"), url("../fonts/oswald-v49-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,9 +63,155 @@ img {
   width: 100%;
 }
 
+body {
+  font-family: "Montserrat";
+}
+
 .container {
-  max-width: 100%;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header__logo {
+  max-width: 80px;
+}
+
+.header__block {
+  margin-left: auto;
+  display: block;
+}
+
+.header__container {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 745px;
+}
+
+.header__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.header__item + .header__item {
+  margin-left: 53px;
+}
+
+@media screen and (max-width: 840px) {
+  .navbar {
+    display: none;
+  }
+  .header__container::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/header_icon.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 24px;
+  }
+}
+.hero {
+  background-image: url(../img/hero_bg.jpg);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  border: solid 3px red;
+  position: relative;
+  background-position-x: center;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  padding: 13px 42px;
+  background-color: #961914;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: transparent;
+  display: inline-block;
+}
+
+.hero__block {
+  margin-top: 135px;
+  display: inline-block;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  max-width: 490px;
+  font-family: "Oswald";
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  max-width: 367px;
+}
+
+.hero__block::after {
+  content: "";
+  background-image: url("../../img/ZOOOV.svg");
+  background-repeat: no-repeat;
+  width: 168px;
+  height: 548px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 19%;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__block::after {
+    background-image: url(../../img/ZOOOV\ 2.svg);
+    width: 100px;
+    height: 330px;
+    top: 55%;
+  }
+  .hero__block {
+    margin-right: 100px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 130%;
+  }
+  .hero__text {
+    font-size: 18px;
+    line-height: 140%;
+  }
 }/*# sourceMappingURL=main.css.map */

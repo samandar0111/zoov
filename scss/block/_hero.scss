@@ -1,0 +1,71 @@
+.hero{
+  background-image: url(../img/hero_bg.jpg);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+ height: 800px;
+  margin: 0 auto;
+  border: solid 3px red;
+  position: relative;
+  background-position-x: center;
+}
+.hero__container{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  @include btn;
+  display: inline-block;
+}
+.hero__block{
+  margin-top: 135px;
+  display: inline-block;
+}
+.hero__title{
+  font-weight: 700;
+font-size: 54px;
+line-height: 130%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+max-width: 490px;
+font-family: 'Oswald';
+margin-bottom: 10px;
+
+}
+.hero__text{
+  font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+margin-bottom: 25px;
+max-width: 367px;
+}
+.hero__block::after{
+  content: '';
+  background-image: url('../../img/ZOOOV.svg');
+  background-repeat: no-repeat;
+ width: 168px;
+height: 548px;
+display:block;
+position: absolute;
+right: 0;
+top: 19%;
+}
+@media screen and  (max-width:700px){
+  .hero__block::after{
+    background-image: url(../../img/ZOOOV\ 2.svg);
+    width: 100px;
+    height: 330px;
+   top: 55%;
+  }
+  .hero__block{
+    margin-right: 100px;
+  }
+  .hero__title{
+    font-size: 44px;
+line-height: 130%;
+  }
+.hero__text{
+  font-size: 18px;
+line-height: 140%;
+}
+}
