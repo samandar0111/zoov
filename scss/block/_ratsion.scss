@@ -1,0 +1,163 @@
+
+.ratsion{
+  margin-top: 80px;
+}
+.ratsion__title-box{
+background-image: url(../../img/titlebg.png);
+background-repeat: no-repeat;
+padding: 16px 10px 43px 0;
+background-position-x: right ;
+display: inline-block;
+max-width: 340px;
+flex-shrink: 0;
+}
+.ratsion__box{
+  display: flex;
+justify-content: space-between;
+gap: 30px
+;
+}
+.ratsion__title{
+  font-weight: 700;
+font-size: 38px;
+line-height: 130%;
+letter-spacing: 0.02em;
+}
+.ratsion__text{
+  max-width: 670px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+}
+
+.ratsion__list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.ratsion__item{
+  max-width: 280px;
+}
+.ratsion__item-img{
+  max-width: 280px;
+  margin-bottom: 45px;
+}
+.ratsion__item-title{
+  font-weight: 700;
+font-size: 16px;
+line-height: 130%;
+width: 200px;
+margin-bottom: 4px;
+}
+.ratsion__item-title::after{
+content: 'Индейка/Говядина';
+font-weight: 400;
+font-size: 13px;
+line-height: 130%;
+color: #9F9E9D;
+margin-bottom: 16px;
+}
+  .ratsion__item-text{
+ max-width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #434242;
+    margin-bottom: 11px;
+  }
+  .ratsion__item-text::after{
+    content: '700г / 500г / 300г / 150г / 100г';
+    font-weight: 400;
+font-size: 13px;
+line-height: 130%;
+color: #9F9E9D;
+   display: block;
+   margin-bottom: 24px;
+  }
+  .ratsion__btn{
+    padding: 13px 42px;
+    border: 1px solid #961914;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #961914;
+  }
+  .ratsion__bottom{
+    background-color:  #EAD1D0;
+    padding: 52px 121px 52px 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: center;
+  }
+.ratsion__bottom-text{
+  font-weight: 500;
+font-size: 28px;
+line-height: 140%;
+letter-spacing: 0.02em;
+max-width: 580px;
+margin-right: 15px;
+}
+  .raspecat{
+padding: 0 42px;
+background: #961914;
+border-radius: 8px;
+border: transparent;
+font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+color: #FFFFFF;
+height:45px;
+  }
+  @media screen and (max-width:1065px){
+    .ratsion__item1{
+      display: none;
+    }
+    
+  }
+  @media screen and (max-width:800px){
+    .ratsion__item2{
+      display: none;
+    }
+    .ratsion__text{
+      display: none;
+    }
+    
+    .ratsion__bottom{
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+      padding: 52px 20px 52px 20px;
+    }
+  }
+  .ratsion__bottom-text{
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+   @media screen and (max-width:550px){
+    .ratsion__item3{
+      display: none;
+    }
+    .ratsion__item{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .ratsion__item-text{
+  
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    .ratsion__item-title{
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .ratsion__bottom-text{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }

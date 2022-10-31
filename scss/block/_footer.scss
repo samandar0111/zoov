@@ -1,0 +1,173 @@
+.footer__container{
+  padding: 80px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__block{
+  background: #961914;
+  border-radius: 2px;
+}
+.kontakt{
+  display: flex;
+  flex-direction: column;
+}
+.kontakt__title{
+  font-family: 'Oswald';
+font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 8px;
+}
+.kontakt__text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+margin-bottom: 32px;
+max-width: 302px;
+}
+.kontakt__tel{
+  font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+margin-bottom: 24px;
+}
+.whatsapp{
+  padding: 10px 16px 10px 38px;
+  background-color: #AB4743;
+ color: #FFFFFF;
+  border-radius: 8px;
+  background-image: url(../../img/WhatsappLogo.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  display:inline-block;
+  width: 230px;
+margin-bottom: 16px;
+}
+.telegram{
+  padding: 10px 16px 10px 38px;
+  background-color: #AB4743;
+ color: #FFFFFF;
+  border-radius: 8px;
+  background-image: url('../../img/TelegramLogo.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  display:inline-block;
+  width: 230px;
+  margin-bottom: 40px;
+}
+
+.end__title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.end__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 34px;
+}
+
+.Имя{
+  background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 8px;
+padding: 15px;
+width: 306px;
+}
+.Имя+.Имя{
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+.area{
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+}
+.ckeck{
+display:inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #FFFFFF;
+width: 178px;
+  padding-left: 30px;
+ background-image: url('../../img/check-lg.svg');
+ background-repeat: no-repeat;
+ background-position: 5px center;
+ margin-right: auto;
+}
+.checked:checked+.ckeck{
+  background-image: url('../../img/ptichka.jpg');
+  background-repeat: no-repeat;
+}
+.submit{
+  padding: 13px 53px;
+  color: #EC7973;
+  display: inline-block;
+background: #FFF4F3;
+border-radius: 8px;
+border: transparent;
+max-width: 172px;
+
+}
+.form__box{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+padding: 20px 10px;
+background-color: #69120E;
+}
+.footer__bottom-text{
+  font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+color: #FFFFFF;
+
+opacity: 0.4;
+}
+@media screen and (max-width:1000px) {
+  .footer__bottom{
+    flex-direction: column;
+  }
+  .footer__bottom-text{
+    margin-bottom: 10px;
+  }
+  
+}
+@media screen and (max-width:970px) {
+.end__box{
+  flex-direction: column;
+}
+.end{
+  display: inline-block;
+  max-width: 400px;
+}
+.Имя+.Имя{
+  margin-left: 0;
+  margin-top: 10px;
+}
+.form__box{
+  flex-direction: column;
+}
+.submit{
+  margin-top: 10px;
+}
+}
+@media screen and (max-width:750px) {
+  .footer__container{
+    flex-direction: column;
+  }
+}
+

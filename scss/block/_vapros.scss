@@ -1,0 +1,61 @@
+.vapros__container{
+  display: flex;
+  margin-top: 180px;
+ 
+}
+.vapros__item{
+  display: flex;  
+  flex-wrap: wrap;
+  max-width: 691px;
+ margin-bottom: 65px;
+ position: relative;
+ margin-right: 20px;
+} 
+.vapros__title{
+  margin-right: 76px;
+font-family: 'Oswald';
+font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+margin-bottom: 40px;
+}
+.vapros__item-title{
+  font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+margin-bottom: 16px;
+}
+.vapros__text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #434242;
+max-width: 691px;
+}
+.minus{
+  display: none;
+}
+.plus{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: absolute;
+  right: -33px;
+  top: 0;
+}
+@media screen and (max-width:650px) {
+  .vapros__container{
+    flex-direction: column;
+  }
+  .vapros__title{
+    font-weight: 700;
+font-size: 40px;
+line-height: 130%;
+  }
+}
+
+

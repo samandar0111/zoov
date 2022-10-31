@@ -1,0 +1,63 @@
+.pacemu{
+  margin-top:180px ;
+}
+.pacemu___title{
+  font-family: 'Oswald';
+font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+}
+.pacemu__list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 52px;
+  flex-wrap: wrap;
+}
+.pacemu__item-title{
+  font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+margin-top: 16px;
+margin-bottom: 8px;
+
+}
+.pacemu__item-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 225px;
+}
+.pacemu__item:nth-child(1)::before{
+  content: '';
+  background-image: url('../../img/pacemu1.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.pacemu__item:nth-child(2)::before{
+  content: '';
+  background-image: url('../../img/pacemu2.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.pacemu__item:nth-child(3)::before{
+  content: '';
+  background-image: url('../../img/pacemu3.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.pacemu__item:nth-child(4)::before{
+  content: '';
+  background-image: url('../../img/pacemu4.1.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: contain;
+}

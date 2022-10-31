@@ -1,0 +1,126 @@
+
+.ot__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 280px;
+}
+
+.ot__img-block{
+  max-width: 475px;
+  position: relative;
+  z-index: -1;
+margin-right: 100px;
+}
+
+.ot__img2{
+ max-width: 75%;
+  height: auto;
+  position: absolute;
+  bottom: -30%;
+  right: -16%;
+}
+.ot__img-block::before{
+  content: '';
+  content: "";
+  background-image: url(../../img/ot_sevd1.png);
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 30%;
+  display: block;
+  z-index: 2;
+  background-size: contain;
+  position: absolute;
+  bottom: -18%;
+  left: -54px;
+  background-position:center;
+}
+.ot__img-block::after{
+  content: '';
+  background-image: url(../../img/ot_sevd2.png);
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 25%;
+  display: block;
+  z-index: 2;
+  background-size: contain;
+  position: absolute;
+  bottom: 24%;
+  right: -17%;
+}
+
+.ot__title{
+  
+font-family: 'Oswald';
+font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+max-width: 430px;
+margin-bottom: 40px;
+}
+.ot__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #434242;
+  max-width: 400px;
+}
+.polucit{
+  margin-top: 300px;
+}
+.polucit__immg:nth-child(1)::before{
+  content: '';
+  background-image: url('../../img/polucit1.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.polucit__immg:nth-child(2)::before{
+  content: '';
+  background-image: url('../../img/polucit2.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.polucit__immg:nth-child(3)::before{
+  content: '';
+  background-image: url('../../img/polucit3.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.polucit__immg:nth-child(4)::before{
+  content: '';
+  background-image: url('../../img/polucit4.svg');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: contain;
+}
+@media screen and (max-width:800px){
+  .ot__container{
+   flex-direction: column;
+  align-items: flex-start;
+  }
+  .ot__content-block{
+    order: 1;
+    margin-top: -150px;
+ margin-left: 0;
+  }
+  .ot__img-block{
+    order: 2;
+    margin-top: 20px;
+  }
+  
+}
+@media screen and (max-width:600px){
+  .ot__img-block{
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
