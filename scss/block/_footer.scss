@@ -40,7 +40,7 @@ margin-bottom: 24px;
   background-color: #AB4743;
  color: #FFFFFF;
   border-radius: 8px;
-  background-image: url(../../img/WhatsappLogo.svg);
+  background-image: url(../img/WhatsappLogo.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
   display:inline-block;
@@ -52,7 +52,7 @@ margin-bottom: 16px;
   background-color: #AB4743;
  color: #FFFFFF;
   border-radius: 8px;
-  background-image: url('../../img/TelegramLogo.png');
+  background-image: url('../img/TelegramLogo.png');
   background-repeat: no-repeat;
   background-position: 10px center;
   display:inline-block;
@@ -100,13 +100,13 @@ display:inline-block;
   color: #FFFFFF;
 width: 178px;
   padding-left: 30px;
- background-image: url('../../img/check-lg.svg');
+ background-image: url('../img/check-lg.svg');
  background-repeat: no-repeat;
  background-position: 5px center;
  margin-right: auto;
 }
 .checked:checked+.ckeck{
-  background-image: url('../../img/ptichka.jpg');
+  background-image: url('../img/ptichka.jpg');
   background-repeat: no-repeat;
 }
 .submit{
